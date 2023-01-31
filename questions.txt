@@ -1,0 +1,36 @@
+What is responsible for defining the routes of the games resource?
+
+the create router file in helpers folder
+-----------------------------
+
+What do you notice about the folder structure? Whats the client responsible for? Whats the server responsible for?
+
+the folders are structure in a way so that the client folder and all its children is dealing with the frontend and the server folder is dealing with the backend
+-----------------------------
+
+
+
+What are the the responsibilities of server.js?
+
+This file is Node.js script that creates an Express.js app, connects to a MongoDB database and creates an API to access the the collection of games in the database called games_hub. It uses CORS for handling Cross-Origin Resource Sharing and the Express.js middleware for parsing incoming request bodies in JSON format. It also listens to incoming HTTP requests on a given port
+-----------------------------
+
+
+What are the responsibilities of the gamesRouter?
+handles http requests to mongodb database and uses create router function to create an instance of the router
+-----------------------------
+
+What process does the the client (front-end) use to communicate with the server?
+it uses a fetch and a useffect to fetch data from the api 
+-----------------------------
+
+What optional second argument does the fetch method take? And what is it used for in this application? Hint: See Using Fetch on the MDN docs
+the second argument of a fetch provides extra information about the fetch request such as method payload and headers 
+-----------------------------
+
+Which of the games API routes does the front-end application consume (i.e. make requests to)?
+-----------------------------
+
+What are we using the MongoDB Driver for?
+-----------------------------
+
